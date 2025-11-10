@@ -1,0 +1,25 @@
+{
+  "name": "grounding-agent",
+  "version": "1.0.0",
+  "description": "MCP Server for Gemini Grounding Agent with multiple tools and search grounding",
+  "main": "mcp_server.py",
+  "scripts": {
+    "start": "python mcp_server.py"
+  },
+  "keywords": ["mcp", "ai", "agent", "gemini", "grounding", "tools"],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/Web_agent"
+  },
+  "mcp": {
+    "server": {
+      "command": "python",
+      "args": ["mcp_server.py"],
+      "env": {
+        "GEMINI_API_KEY": "${GEMINI_API_KEY}"
+      }
+    }
+  }
+}
