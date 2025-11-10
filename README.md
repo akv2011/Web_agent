@@ -6,7 +6,7 @@ A powerful AI agent built with Google's Gemini API featuring:
 - **6+ custom tools** for various operations
 - **Automatic function calling** with seamless integration
 
-## 🚀 Features
+##  Features
 
 ### Two-Stage Architecture
 1. **Stage 1 - Grounding**: Uses Gemini with Google Search and custom tools to gather factual, tool-augmented information
@@ -42,7 +42,7 @@ A powerful AI agent built with Google's Gemini API featuring:
    - Automatically searches and grounds responses in real-time data
    - Example: `"What was the score of the latest Olympic event?"`
 
-## 📦 Installation
+##  Installation
 
 ```bash
 # Clone or download the repository
@@ -52,7 +52,7 @@ cd Web_agent
 pip install -r requirements.txt
 ```
 
-## 🎯 Usage
+##  Usage
 
 ### Interactive Mode
 
@@ -84,7 +84,7 @@ result = agent.process_query(
 agent.display_result(result)
 ```
 
-## 💡 Example Queries
+##  Example Queries
 
 ### Multi-Tool Queries
 ```
@@ -110,7 +110,7 @@ agent.display_result(result)
 "What's the sine of 45 degrees times pi?"
 ```
 
-## 🔧 Configuration
+##  Configuration
 
 ### API Key
 The API key is currently hardcoded in `main.py`. For production:
@@ -129,7 +129,7 @@ Available models:
 - `gemini-2.5-flash`
 - `gemini-pro`
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Web_agent/
@@ -140,7 +140,7 @@ Web_agent/
 └── README.md              # This file
 ```
 
-## 🛠️ How It Works
+##  How It Works
 
 ### 1. Grounding Stage
 ```python
@@ -164,7 +164,7 @@ Tools are Python functions with docstrings. Gemini automatically:
 - Determines which tools to call
 - Executes tools and integrates results
 
-## 🎨 Interactive Commands
+##  Interactive Commands
 
 When running `main.py`:
 - `help` - Show available commands
@@ -174,7 +174,7 @@ When running `main.py`:
 - `clear` - Clear the screen
 - `quit` or `exit` - Exit application
 
-## 🔍 Response Metadata
+##  Response Metadata
 
 Each response includes:
 - **Grounded Response**: Initial tool-augmented answer
@@ -182,7 +182,7 @@ Each response includes:
 - **Function Calls**: List of tools used
 - **Grounding Metadata**: Web sources (if search enabled)
 
-## 🚨 Error Handling
+##  Error Handling
 
 The agent gracefully handles:
 - API errors
@@ -190,38 +190,14 @@ The agent gracefully handles:
 - Network issues
 - Invalid inputs
 
-## 📝 Notes
+## Notes
 
 - **Mock Data**: Weather data is currently mocked. Integrate a real weather API (OpenWeatherMap, WeatherAPI) for production.
 - **Web Scraping**: Basic implementation. Use BeautifulSoup for better HTML parsing.
 - **Security**: File operations are unrestricted. Add path validation for production.
 
-## 🔐 Security Considerations
 
-- Store API keys in environment variables
-- Validate file paths in file_operations
-- Sanitize URLs in web_scraper
-- Rate limit API calls
-
-## 🤝 Contributing
-
-Feel free to:
-- Add new tools
-- Improve existing tools
-- Enhance the refinement stage
-- Add more sophisticated error handling
-
-## 📄 License
+##  License
 
 This project is provided as-is for educational purposes.
 
-## 🙏 Credits
-
-Built with:
-- Google Gemini API
-- Python 3.8+
-- google-genai library
-
----
-
-**Happy Grounding! 🚀**
